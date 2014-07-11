@@ -1,0 +1,26 @@
+/*
+* screen.scss | screen.css
+*
+* by Nate Beatty <nate.beatty@gmail.com>
+*
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#video {
+    display: none; // Render offscreen
+    width: 640px;
+    height: 360px;
+}
+
+#canvas {
+    background: green;
+    width: 640px;
+    height: 360px;
+    display: block;
+    margin: 10px auto;
+    -webkit-transform: scaleX(-1); // Webcam display will be mirrored
+}

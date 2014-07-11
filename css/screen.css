@@ -1,0 +1,28 @@
+/*
+* screen.scss | screen.css
+*
+* by Nate Beatty <nate.beatty@gmail.com>
+*
+ */
+/* line 8, ../sass/screen.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../sass/screen.scss */
+#video {
+  display: none;
+  width: 640px;
+  height: 360px;
+}
+
+/* line 19, ../sass/screen.scss */
+#canvas {
+  background: green;
+  width: 640px;
+  height: 360px;
+  display: block;
+  margin: 10px auto;
+  -webkit-transform: scaleX(-1);
+}
