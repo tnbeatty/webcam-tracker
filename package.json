@@ -1,0 +1,15 @@
+{
+  "name": "camera-tracker",
+  "version": "0.0.0",
+  "description": "Positional tracking using the webcam. For IrisVR hackdays.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "author": "Nate Beatty",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.6.1"
+  }
+}
