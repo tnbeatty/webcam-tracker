@@ -6,6 +6,22 @@ by [Nate Beatty](http://natebeatty.com) for [IrisVR](http://irisvr.com) hackday 
 Developing
 ===
 
+Third Party JS Libs
+---
+
+### [Modernizr](http://modernizr.com)
+
+I am using a custom build of Modernizr with the following options:
+
+* HTML5
+    * webworkers
+* Extra
+    * html5shiv
+    * Modernizr.load
+    * Add CSS Classes
+* Non-core detects
+    * getusermedia
+
 Testing
 ---
 
