@@ -5,6 +5,9 @@
 *
  */
 
+$canvas-width: 640px;
+$canvas-height: (9 / 16) * $canvas-width;
+
 html, body {
     margin: 0;
     padding: 0;
@@ -18,9 +21,16 @@ html, body {
 
 #canvas {
     background: green;
-    width: 640px;
-    height: 360px;
+    width: $canvas-width;
+    height: $canvas-height;
     display: block;
     margin: 10px auto;
     -webkit-transform: scaleX(-1); // Webcam display will be mirrored
+}
+
+#three-canvas {
+    width: $canvas-width;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
 }

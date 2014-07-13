@@ -97,11 +97,6 @@ function createHeatmap(pixels, width, height) {
         }
     }
 
-    var p = new Parallel(pxmap); // map over rows
-    p.map(pixelScore);
-
-
-
     // Create heatmap --> This is the bottleneck
     // Runs in O(n^2) time. This needs to be faster...
     for (var j = 5; j < height - 5; j++) {

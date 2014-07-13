@@ -4,20 +4,20 @@
 * by Nate Beatty <nate.beatty@gmail.com>
 *
  */
-/* line 8, ../sass/screen.scss */
+/* line 11, ../sass/screen.scss */
 html, body {
   margin: 0;
   padding: 0;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 #video {
   display: none;
   width: 640px;
   height: 360px;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 #canvas {
   background: green;
   width: 640px;
@@ -25,4 +25,12 @@ html, body {
   display: block;
   margin: 10px auto;
   -webkit-transform: scaleX(-1);
+}
+
+/* line 31, ../sass/screen.scss */
+#three-canvas {
+  width: 640px;
+  height: 200px;
+  display: block;
+  margin: 10px auto;
 }
