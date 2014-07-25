@@ -2,8 +2,6 @@
  * main.js
  *
  * by Nate Beatty <nate.beatty@gmail.com>
- *
- *
  */
 
 // GLOBAL VARIABLES
@@ -49,13 +47,15 @@ function draw() {
     setTimeout(draw, timeoutms);
 }
 
+/**
+ * I wrote this hack using the functions in lib.oldie.js and know that it works fairly well on a variety of browsers. The second library, lib.performance.js, will be modified to include some parallel processing intended to be run on only modern browsers... looking forward to playing with the color-finding algorithm for a future hackday.
+ */
+
 Modernizr.load([{
-        test: Modernizr.webworkers,
-        yep: ['js/parallel.js', 'js/lib.performance.js'],
-        nope: ['js/lib.oldie.js']
-    },
-    // { load: 'js/lib.oldie.js' }
-]);
+    test: Modernizr.webworkers,
+    yep: ['js/parallel.js', 'js/lib.performance.js'],
+    nope: ['js/lib.oldie.js']
+}]);
 
 if (Modernizr.getusermedia) {
     var gUM = Modernizr.prefixed('getUserMedia', navigator);
@@ -85,7 +85,9 @@ var threeCanvasWidth = $('#three-canvas').width();
 var aspect = threeCanvasWidth / threeCanvasHeight;
 
 function init() {
-    renderer = new THREE.WebGLRenderer({alpha: true});
+    renderer = new THREE.WebGLRenderer({
+        alpha: true
+    });
     renderer.setSize(threeCanvasWidth, threeCanvasHeight);
     document.getElementById('three-canvas').appendChild(renderer.domElement);
 
@@ -95,7 +97,8 @@ function init() {
     scene = new THREE.Scene();
 
     var cubesize = 75;
-    cube = new THREE.Mesh(new THREE.BoxGeometry(cubesize, cubesize, cubesize), new THREE.MeshNormalMaterial());
+    cube = new THREE.Mesh(new THREE.BoxGeometry(cubesize, cubesize, cubesize),
+        new THREE.MeshNormalMaterial());
     cube.overdraw = true;
     scene.add(cube);
 

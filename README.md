@@ -1,4 +1,4 @@
-camera-tracker
+webcam-tracker
 ===
 
 by [Nate Beatty](http://natebeatty.com) for [IrisVR](http://irisvr.com) hackday on July 11, 2014

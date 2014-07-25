@@ -1,5 +1,5 @@
 {
-  "name": "camera-tracker",
+  "name": "webcam-tracker",
   "version": "0.0.0",
   "description": "Positional tracking using the webcam. For IrisVR hackdays.",
   "main": "index.html",
