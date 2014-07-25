@@ -1,26 +1,14 @@
 webcam-tracker
 ===
 
+|| _webworkers branch_ ||
+
 by [Nate Beatty](http://natebeatty.com) for [IrisVR](http://irisvr.com) hackday on July 11, 2014
 
 Developing
 ===
 
-Third Party JS Libs
----
-
-### [Modernizr](http://modernizr.com)
-
-I am using a custom build of Modernizr with the following options:
-
-* HTML5
-    * webworkers
-* Extra
-    * html5shiv
-    * Modernizr.load
-    * Add CSS Classes
-* Non-core detects
-    * getusermedia
+For the webworkers branch, all of the image processing is being done in a seperate thread using webworkers. Thus, the video feed can be rendered to the canvas on the left without tying up the UI while the image is processed and then rendered on the canvas on the right.
 
 Testing
 ---

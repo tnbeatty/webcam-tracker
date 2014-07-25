@@ -11,23 +11,22 @@ html, body {
 }
 
 /* line 16, ../sass/screen.scss */
-#video {
-  display: none;
-  width: 640px;
-  height: 360px;
+.wrapper {
+  text-align: center;
 }
 
-/* line 22, ../sass/screen.scss */
-#canvas {
+/* line 20, ../sass/screen.scss */
+canvas {
   background: green;
   width: 640px;
   height: 360px;
-  display: block;
-  margin: 10px auto;
+  display: inline-block;
+  vertical-align: top;
+  margin: 40px 10px;
   -webkit-transform: scaleX(-1);
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 #three-canvas {
   width: 640px;
   height: 200px;

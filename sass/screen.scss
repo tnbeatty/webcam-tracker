@@ -13,18 +13,17 @@ html, body {
     padding: 0;
 }
 
-#video {
-    display: none; // Render offscreen
-    width: 640px;
-    height: 360px;
+.wrapper {
+    text-align: center;
 }
 
-#canvas {
+canvas {
     background: green;
     width: $canvas-width;
     height: $canvas-height;
-    display: block;
-    margin: 10px auto;
+    display: inline-block;
+    vertical-align: top;
+    margin: 40px 10px;
     -webkit-transform: scaleX(-1); // Webcam display will be mirrored
 }
 
